@@ -1,0 +1,18 @@
+<a class="recipe-card-link" style="text-decoration: none;">
+  <div class="recipe-card card rounded shadow-sm border-light mb-4">
+    <img [src]="recipe.image" alt="{{ recipe.name }}" class="card-img-top rounded-top" />
+    <div class="card-body">
+      <h2 class="card-title">{{ recipe.name }}</h2>
+      <p class="card-text text-muted">{{ recipe.description }}</p>
+      <div class="d-flex justify-content-around align-items-center mt-3">
+        <div class="text-muted">
+          <i class="fas fa-clock"></i> {{ recipe.prepTimeMinutes }} mins
+        </div>
+        <div class="text-muted">
+          <i class="fas fa-users"></i> {{ recipe.servings }} servings
+        </div>
+      </div>
+      <a [routerLink]="['/recipes', recipe.id]" class="btn btn-secondary mt-3">View Recipe</a>
+    </div>
+  </div>
+</a>

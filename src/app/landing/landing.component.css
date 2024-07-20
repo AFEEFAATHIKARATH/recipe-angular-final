@@ -1,0 +1,66 @@
+body, html {
+  margin: 0;
+  padding: 0;
+ font-family: 'Poppins', Arial, sans-serif;
+  color: #333;
+}
+
+.landing-page {
+font-family: 'Poppins', Arial, sans-serif;
+}
+
+.hero-section {
+  background: url('https://i.postimg.cc/sgFK7HSV/indian-condiments-with-copy-space-view.jpg') no-repeat center center/cover;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+.cta-button {
+  background-color: #ff5722;
+  color: #fff;
+  padding: 15px 25px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #e64a19;
+}
+
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1.2rem;
+  }
+
+  .cta-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+}

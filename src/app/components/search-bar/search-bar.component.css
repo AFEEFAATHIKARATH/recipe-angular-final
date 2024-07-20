@@ -1,0 +1,21 @@
+.search-bar {
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+.form-control {
+  border-radius: 0;
+}
+
+.btn-outline-secondary {
+  border-radius: 0;
+  border-color: #ccc;
+}
+
+.btn-outline-secondary:hover {
+  background-color: #e9ecef;
+}
+
+.fas.fa-search {
+  color: #6c757d;
+}

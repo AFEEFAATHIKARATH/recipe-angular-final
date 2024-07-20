@@ -1,0 +1,61 @@
+<div class="recipe-detail-container container mt-5">
+  <div class="recipe-header d-flex flex-column align-items-center text-center">
+    <img [src]="recipe.image" alt="{{ recipe.name }}" class="recipe-image img-fluid my-3">
+    <h1><strong>{{ recipe.name }}</strong></h1>
+  </div>
+
+  <div class="recipe-info-container mt-4">
+    <div class="recipe-info row">
+      <div class="info-item col-md-4 col-sm-6 my-2">
+        <i class="fas fa-clock"></i>
+        <strong> Prep Time:</strong> {{ recipe.prepTimeMinutes }} minutes
+      </div>
+      <div class="info-item col-md-4 col-sm-6 my-2">
+        <i class="fas fa-hourglass-half"></i>
+        <strong> Cook Time:</strong> {{ recipe.cookTimeMinutes }} minutes
+      </div>
+      <div class="info-item col-md-4 col-sm-6 my-2">
+        <i class="fas fa-users"></i>
+        <strong> Servings:</strong> {{ recipe.servings }}
+      </div>
+      <div class="info-item col-md-4 col-sm-6 my-2">
+        <i class="fas fa-tachometer-alt"></i>
+        <strong> Difficulty:</strong> {{ recipe.difficulty }}
+      </div>
+      <div class="info-item col-md-4 col-sm-6 my-2">
+        <i class="fas fa-utensils"></i>
+        <strong> Cuisine:</strong> {{ recipe.cuisine }}
+      </div>
+      <div class="info-item col-md-4 col-sm-6 my-2">
+        <i class="fas fa-fire-alt"></i>
+        <strong> Calories per Serving:</strong> {{ recipe.caloriesPerServing }} cal
+      </div>
+      <div class="info-item col-md-4 col-sm-6 my-2">
+        <i class="fas fa-star"></i>
+        <strong> Rating:</strong> {{ recipe.rating }} / 5 ({{ recipe.reviewCount }} reviews)
+      </div>
+      <div class="info-item col-md-4 col-sm-6 my-2">
+        <i class="fas fa-concierge-bell"></i>
+        <strong> Meal Type:</strong> {{ recipe.mealType.join(', ') }}
+      </div>
+      <div class="info-item col-md-4 col-sm-6 my-2">
+        <i class="fas fa-tags"></i>
+        <strong> Tags:</strong> {{ recipe.tags.join(', ') }}
+      </div>
+    </div>
+  </div>
+
+  <div class="recipe-ingredients-container mt-5">
+    <h2><i class="fas fa-carrot"></i> Ingredients</h2>
+    <ul>
+      <li *ngFor="let ingredient of recipe.ingredients">{{ ingredient }}</li>
+    </ul>
+  </div>
+
+  <div class="recipe-instructions-container mt-5">
+    <h2><i class="fas fa-list-ol"></i> Instructions</h2>
+    <ol>
+      <li *ngFor="let instruction of recipe.instructions">{{ instruction }}</li>
+    </ol>
+  </div>
+</div>

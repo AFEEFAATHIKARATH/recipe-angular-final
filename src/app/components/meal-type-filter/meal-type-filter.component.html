@@ -1,0 +1,32 @@
+<div class="btn-group m-2" role="group">
+  <button 
+    type="button" 
+    class="btn btn-secondary m-2" 
+    [ngClass]="{'active': isActive('All')}" 
+    (click)="selectMealType('All')">All
+  </button>
+  <button 
+    type="button" 
+    class="btn btn-secondary m-2" 
+    [ngClass]="{'active': isActive('Lunch')}" 
+    (click)="selectMealType('Lunch')">Lunch
+  </button>
+  <button 
+    type="button" 
+    class="btn btn-secondary m-2" 
+    [ngClass]="{'active': isActive('Dinner')}" 
+    (click)="selectMealType('Dinner')">Dinner
+  </button>
+  <button 
+    type="button" 
+    class="btn btn-secondary m-2" 
+    [ngClass]="{'active': isActive('Snack')}" 
+    (click)="selectMealType('Snack')">Snack
+  </button>
+  <button 
+    type="button" 
+    class="btn btn-secondary m-2" 
+    [ngClass]="{'active': isActive('Appetizer')}" 
+    (click)="selectMealType('Appetizer')">Appetizer
+  </button>
+</div>
